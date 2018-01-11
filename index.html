@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" type="text/css" href="css/flightindicators.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+<title>BucketsCanFly Controller</title>
+
+</head>
+
+<body>
+
+<img id="video-container" src="http://192.168.1.80:8080/?action=stream"/>
+
+<div id="disconnected">DISCONNECTED</div>
+
+<div id="log-container"></div>
+
+<div id="throttle-container">
+	Motor 0: <span id="throttle0">0</span><br/>
+	Motor 1: <span id="throttle1">0</span>
+</div>
+
+<div id="fli-container">
+	<div id="fli-throttle"></div>	<!-- refuses to size correctly as a span -->
+	<span id="fli-attitude"></span>
+	<span id="fli-heading"></span>
+	<span id="fli-altimeter"></span>
+</div>
+
+<script src="js/reconnecting-websocket.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.flightindicators.min.js"></script>
+<script src="js/progressbar.min.js"></script>
+<script src="js/gp.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
+

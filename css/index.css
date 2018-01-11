@@ -1,0 +1,57 @@
+body {
+	background: #0D0D0D;
+}
+
+#video-container {
+	display: block;
+	width: 98%;
+	height: 98%;
+	object-fit: contain;
+	position: absolute;
+	z-index: 1;
+}
+
+#throttle-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+#fli-container {
+	width: 99%;
+	position: absolute;
+	bottom: 0px;
+	z-index: 2;
+
+	display: flex;
+	justify-content: center;
+}
+
+#fli-throttle {
+	margin: 30px;
+	width: 160px;
+	height: 160px;
+	position: relative;
+}
+
+#disconnected {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 98;
+
+	color: #ff0000;
+	font-size: 6rem;
+}
+
+#log-container {
+	color: #ffffff;
+	z-index: 99;
+	position: absolute;
+}
+
