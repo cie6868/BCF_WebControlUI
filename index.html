@@ -6,6 +6,8 @@
 
 <meta charset="utf-8"/>
 
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="css/flightindicators.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
 
@@ -17,13 +19,15 @@
 
 <img id="video-container" src="http://192.168.1.80:8080/?action=stream"/>
 
-<div id="disconnected">DISCONNECTED</div>
+<div id="disconnected">NO SIGNAL</div>
 
 <div id="log-container"></div>
 
 <div id="throttle-container">
-	Motor 0: <span id="throttle0">0</span><br/>
-	Motor 1: <span id="throttle1">0</span>
+	Throttle 0: <span id="throttle0">0</span><br/>
+	RPM 0: <span id="rpm0">0</span><br/>
+	Throttle 1: <span id="throttle1">0</span><br/>
+	RPM 1: <span id="rpm1">0</span>
 </div>
 
 <div id="fli-container">

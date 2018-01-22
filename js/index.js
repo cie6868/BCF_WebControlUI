@@ -85,11 +85,17 @@ function onDataInput(field, value) {
 		case 12:
 			fliAttitude.setPitch(value);
 			break;
-		case 15:
+		case 21:
 			$('#throttle0').html(value);
 			break;
-		case 16:
+		case 22:
 			$('#throttle1').html(value);
+			break;
+		case 31:
+			$('#rpm0').html(Math.round(value));
+			break;
+		case 32:
+			$('#rpm1').html(Math.round(value));
 			break;
 	}
 }
